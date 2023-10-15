@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Container from '@/components/container'
 import NavBar from '@/components/navBar'
-import SocialAcc from '@/components/socialAcc'
+import SocialAccounts from '@/components/socialAccounts'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,14 +21,14 @@ export default function RootLayout({
   return (
     <html lang="en">
   
-      <body className={`${inter.className} bg-slate-900 text-white h-full`}>
+      <body className={`${inter.className} bg-slate-900 text-white`}>
         <Container>
-          <div className='h-full flex items-center justify-between'>
-            <div>
+          <div className='lg:flex lg:justify-between lg:gap-4 text-slate-400'>
+            <header className='lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24'>
               <ShortBio />
               <NavBar />
-              <SocialAcc />
-            </div>
+              <SocialAccounts />
+            </header>
             <div>
               {children}
             </div>
