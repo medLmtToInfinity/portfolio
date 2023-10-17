@@ -1,20 +1,21 @@
 import About from "@/components/about";
 import Experiences from "@/components/experiences";
 import Projects from "@/components/projects";
+import Separator from "@/components/separator";
+import Skills from "@/components/skills";
 import React from "react";
 
 
 const HomePage = () => {
-  const experiences =[];
   
   return (
     <div>
       <About />
-      {
-        !!experiences.length && <Experiences />
-      }
+      <Separator />
+      <Experiences />
       <Projects />
-      
+      <Separator />
+      <Skills />
     </div>
   )
 }
