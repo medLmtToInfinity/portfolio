@@ -38,7 +38,7 @@ const Projects = () => {
 
   if(!projects.length) return null;
   return (
-    <div id="projects" className="mb-20">
+    <div id="projects" className="mb-20 section">
       {
         projects.map(project => <Project key={project.link} {...project} />)
       }

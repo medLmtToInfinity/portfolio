@@ -1,9 +1,9 @@
 
 const About = () => {
   return (
-    <div id="about" className="mb-20">
+    <div id="about" className="mb-20 section">
       <p className="mb-10">
-        I am Mohammed Lamarti, a 21-year-old <span className="text-white font-semibold">software engineering student</span> at the <span className="text-white font-semibold">National School of Applied Sciences Safi</span>. My journey into the world of software development began with a profound fascination for technology that I nurtured from a young age.
+        I am Mohammed Lamarti, a 21-year-old <span className="text-white font-semibold">software engineering student</span> at the <span className="text-white font-semibold">National School of Applied Sciences of Safi</span>. My journey into the world of software development began with a profound fascination for technology that I nurtured from a young age.
       </p>
       <p className="mb-10">
         My passion for coding and all things tech led me to pursue a degree in software engineering, a decision I have never looked back on. As a <span className="text-white font-semibold">full-stack developer</span>, I&apos;ve delved into the intricate realms of front-end and back-end development, mastering various programming languages, web development frameworks, and database management systems.

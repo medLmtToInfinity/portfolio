@@ -2,7 +2,6 @@ import classNames from 'classnames';
 import React, { ReactElement } from 'react'
 
 const NavItem : React.FC<{text : String, icon ?: ReactElement, refId : String, active : boolean}> = ( { text, icon, refId, active } ) => {
-  console.log(active);
   const classes = classNames(
   "uppercase",  
   "-translate-x-[10%]", 

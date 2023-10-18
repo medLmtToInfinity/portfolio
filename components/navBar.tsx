@@ -1,3 +1,5 @@
+"use client";
+import { useEffect, useState } from "react";
 import NavItem from "./nav-item";
 import { BsFillPersonFill, BsFillBagCheckFill, BsFillFileCodeFill, BsAward, BsStar } from "react-icons/bs";
 import { GiSkills } from "react-icons/gi";
@@ -9,7 +11,39 @@ interface Item {
 }
 
 const NavBar = () => {
-    const active : boolean[] = [true, false, false];
+    const [isMounted, setIsMounted] = useState(false);
+    useEffect(()=>{
+        setIsMounted(true)
+    }, []);
+    const [active, setActive] = useState([true, false, false]);
+    console.log(active);
+    useEffect(() => {
+            const timer = setTimeout(() => {
+              // Your code here, which will run last
+            }, 0);
+        
+            
+        const sections = document.querySelectorAll(".section");
+        console.log(sections)
+        const handler = () => {
+            let current: string | unknown;
+            sections.forEach((section) => {
+                const sectionTop = (section as HTMLElement).offsetTop;
+                const sectionHeight = (section as HTMLElement).offsetHeight;
+                // console.log(window.scrollY, (sectionTop - sectionHeight) / 2)
+                    if(window.scrollY >= sectionTop - sectionHeight / 2) current = section.getAttribute("id");
+                    // console.log(current)
+                })
+                if(current === "about") setActive([true, false, false])
+                else if(current === "projects") setActive([false, true, false])
+                else if(current === "skills") setActive([false, false, true])
+        }
+        window.addEventListener("scroll", handler)
+        return clearTimeout(timer);
+    }, [active])
+    if(!isMounted) return null;
+
+    //const active : boolean[] = [true, false, false];
     const size : number = 20;
     const navbarItems : Array<Item> = [
         {
@@ -19,28 +53,28 @@ const NavBar = () => {
             status: true,
         },
         {
-            label: "Experiences",
-            icon: <BsFillBagCheckFill size={size} />,
-            refId: "experience",
-            status: false,
-        },
-        {
             label: "Projects",
             icon: <BsFillFileCodeFill size={size} />,
             refId: "projects",
             status: true,
         },
         {
-            label: "Certificate",
-            icon: <BsAward size={size} />,
-            refId:"certificate",
-            status: false,
-        },
-        {
             label: "Skills",
             icon: <GiSkills size={size} />,
             refId:"skills",
             status: true,
+        },
+        {
+            label: "Experiences",
+            icon: <BsFillBagCheckFill size={size} />,
+            refId: "experience",
+            status: false,
+        },
+        {
+            label: "Certificate",
+            icon: <BsAward size={size} />,
+            refId:"certificate",
+            status: false,
         },
     ]
     return (

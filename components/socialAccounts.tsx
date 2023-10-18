@@ -32,7 +32,7 @@ const SocialAccounts = () => {
     },
   ]
   return (
-    <div className='flex items-center gap-4 mt-10'>
+    <div className='flex items-center gap-4 mt-10 mb-10'>
       {
         socialAccounts.map(({href, icon}, index) => <SocialAccount key={index} href={href} icon={icon} />)
       }
