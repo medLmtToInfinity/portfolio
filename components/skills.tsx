@@ -23,12 +23,20 @@ const Skills = () => {
       icon: Icon.SkillIconsJavascript({fill: "purple", width: "60px", height: "60px"})
     },
     {
+      label: "typescript",
+      icon: Icon.SkillIconsTypescript({fill: "purple", width: "60px", height: "60px"})
+    },
+    {
       label: "php",
       icon: Icon.SkillIconsPhpLight({fill: "purple", width: "60px", height: "60px"})
     },
     {
       label: "java",
       icon: Icon.SkillIconsJavaLight({fill: "purple", width: "60px", height: "60px"})
+    },
+    {
+      label: "kotlin",
+      icon: Icon.SkillIconsKotlinLight({fill: "purple", width: "60px", height: "60px"})
     },
     {
       label: "c++",
@@ -49,10 +57,6 @@ const Skills = () => {
     {
       label: "nextjs",
       icon: Icon.SkillIconsNextjsLight({fill: "purple", width: "60px", height: "60px"})
-    },
-    {
-      label: "typescript",
-      icon: Icon.SkillIconsTypescript({fill: "purple", width: "60px", height: "60px"})
     },
   ]
   return (
