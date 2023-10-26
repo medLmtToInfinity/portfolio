@@ -11,6 +11,12 @@ export interface ProjectItem {
 const Projects = () => {
   const projects : ProjectItem[] = [
     {
+      title: "Portfolio Website",
+      description: "I've designed and developed a sleek and highly functional Portfolio Website, utilizing Next.js and Tailwind CSS to create an impressive online presence. This website is a showcase of my work, skills, and experiences, designed to leave a lasting impression on visitors. Leveraging the power of Next.js, it offers fast and optimized performance, ensuring a smooth user experience. Tailwind CSS contributes to the website's stunning and responsive design, making it visually appealing and adaptable to various screen sizes. This project not only highlights my talents and accomplishments but also reflects my commitment to modern web development practices for creating an elegant and user-friendly Portfolio Website.",
+      link: "https://mohammed-lamarti.vercel.app/",
+      imgSrc: "/images/portfolio.png",
+    },
+    {
       title: "E-commerce Dashboard Website",
       description: "I've successfully developed a robust E-commerce Dashboard Website utilizing a powerful tech stack, including Next.js, Clerk, Prisma, Tailwind CSS, and PlanetScale. This project offers a comprehensive solution for managing e-commerce operations, providing a seamless and intuitive interface for both administrators and users. Key features include secure authentication and authorization using Clerk, efficient database management through Prisma, and a sleek, responsive design with Tailwind CSS. The utilization of PlanetScale ensures scalability and reliability, making it a sustainable solution for growing e-commerce businesses. This project demonstrates my proficiency in cutting-edge web development technologies and my ability to create user-friendly, high-performing digital experiences.",
       link: "https://ecommerce-admin-khaki-delta.vercel.app/",
