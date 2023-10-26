@@ -8,6 +8,7 @@ import SocialAccounts from '@/components/socialAccounts'
 import HoverProvider from '@/providers/hover-provider'
 import Chat from "@/components/chat";
 import QueryProvider from '@/providers/query-provider'
+import Footer from '@/components/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -43,6 +44,7 @@ export default function RootLayout({
             </div>
           </Container>
           {/* <Chat /> */}
+          <Footer />
         </body>
       {/* </QueryProvider> */}
     </html>
