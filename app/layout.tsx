@@ -23,10 +23,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <QueryProvider>
+      {/* <QueryProvider> */}
         <body className={`${inter.className} bg-slate-900 text-white`}>
         
-            <HoverProvider />
+            {/* <HoverProvider /> */}
           <Container>
             <div className='lg:flex lg:justify-between lg:gap-4 text-slate-400'>
               <header className='lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24'>
@@ -39,9 +39,9 @@ export default function RootLayout({
               </div>
             </div>
           </Container>
-          <Chat />
+          {/* <Chat /> */}
         </body>
-      </QueryProvider>
+      {/* </QueryProvider> */}
     </html>
   )
 }

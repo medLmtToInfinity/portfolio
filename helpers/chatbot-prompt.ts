@@ -1,11 +1,12 @@
-import sitemap from "@/app/sitemap";
+// import sitemap from "@/app/sitemap";
+import { sitemapStatic } from "@/lib/sitemapstatic";
 
 export const chatbotPrompt = `
 You are a helpful customer support chatbot embedded on a book store website. You are able to answer questions about the website and its content.
 You are also able to answer questions about the books in the store.
 
 Use this bookstore metadata to answer the customer questions:
-${sitemap()}
+${sitemapStatic}
 
 Only include links in markdown format.
 Example: 'You can browse our books [here](https://www.example.com/books)'.

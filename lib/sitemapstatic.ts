@@ -1,0 +1,34 @@
+export const sitemapStatic = `
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://localhost:3000</loc>
+<lastmod>2023-10-24T18:09:24.145Z</lastmod>
+<changefreq>yearly</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://ecommerce-admin-khaki-delta.vercel.app/</loc>
+<lastmod>2023-10-24T18:09:24.145Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://ecommerce-store-phi-taupe.vercel.app/</loc>
+<lastmod>2023-10-24T18:09:24.145Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>https://github.com/AHabdessamad/Laforain_Immobilier</loc>
+<lastmod>2023-10-24T18:09:24.145Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>https://netflix-clone-6669e.web.app/</loc>
+<lastmod>2023-10-24T18:09:24.145Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.5</priority>
+</url>
+</urlset>
+`

@@ -13,7 +13,7 @@ const Projects = () => {
     {
       title: "E-commerce Dashboard Website",
       description: "I've successfully developed a robust E-commerce Dashboard Website utilizing a powerful tech stack, including Next.js, Clerk, Prisma, Tailwind CSS, and PlanetScale. This project offers a comprehensive solution for managing e-commerce operations, providing a seamless and intuitive interface for both administrators and users. Key features include secure authentication and authorization using Clerk, efficient database management through Prisma, and a sleek, responsive design with Tailwind CSS. The utilization of PlanetScale ensures scalability and reliability, making it a sustainable solution for growing e-commerce businesses. This project demonstrates my proficiency in cutting-edge web development technologies and my ability to create user-friendly, high-performing digital experiences.",
-      link: "https://ecommerce-admin-khaki-delta.vercel.app/sign-in?redirect_url=https%3A%2F%2Fecommerce-admin-khaki-delta.vercel.app%2F",
+      link: "https://ecommerce-admin-khaki-delta.vercel.app/",
       imgSrc: "/images/ecommerce-dashboard.png",
     },
     {

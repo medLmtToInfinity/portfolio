@@ -16,7 +16,6 @@ const NavBar = () => {
         setIsMounted(true)
     }, []);
     const [active, setActive] = useState([true, false, false]);
-    console.log(active);
     useEffect(() => {
             const timer = setTimeout(() => {
               // Your code here, which will run last
@@ -24,15 +23,12 @@ const NavBar = () => {
         
             
         const sections = document.querySelectorAll(".section");
-        console.log(sections)
         const handler = () => {
             let current: string | unknown;
             sections.forEach((section) => {
                 const sectionTop = (section as HTMLElement).offsetTop;
                 const sectionHeight = (section as HTMLElement).offsetHeight;
-                // console.log(window.scrollY, (sectionTop - sectionHeight) / 2)
                     if(window.scrollY >= sectionTop - sectionHeight / 2) current = section.getAttribute("id");
-                    // console.log(current)
                 })
                 if(current === "about") setActive([true, false, false])
                 else if(current === "projects") setActive([false, true, false])
