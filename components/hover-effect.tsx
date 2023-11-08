@@ -35,7 +35,7 @@ function HoverEffect() {
   return (
     <div
         ref={ref}
-      className='pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute'
+      className='h-full pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute'
       style={divStyle}
     />
   );
